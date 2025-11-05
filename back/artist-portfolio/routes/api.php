@@ -1,60 +1,60 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\AwardsController;
-use App\Http\Controllers\ContactsController;
-use App\Http\Controllers\CVController;
-use App\Http\Controllers\PicturesController;
+// use Illuminate\Support\Facades\Route;
+// use App\Http\Controllers\AuthController;
+// use App\Http\Controllers\AwardsController;
+// use App\Http\Controllers\ContactsController;
+// use App\Http\Controllers\CVController;
+// use App\Http\Controllers\PicturesController;
 
-/// Awards
-Route::controller(AwardsController::class)->group(function(){
-    Route::get('/amer-alkhatib/awards', 'index');
-    Route::post('/amer-alkhatib/award-show', 'show');
-    Route::post('/amer-alkhatib/award-search', 'search');
-    Route::middleware('auth:sanctum')->group(function(){
-        Route::post('/amer-alkhatib/award-store', 'store');
-        Route::post('/amer-alkhatib/award-update', 'update');
-        Route::post('/amer-alkhatib/award-destroy', 'destroy');
-    });
-});
+// /// Awards
+// Route::controller(AwardsController::class)->group(function(){
+//     Route::get('/amer-alkhatib/awards', 'index');
+//     Route::post('/amer-alkhatib/award-show', 'show');
+//     Route::post('/amer-alkhatib/award-search', 'search');
+//     Route::middleware('auth:sanctum')->group(function(){
+//         Route::post('/amer-alkhatib/award-store', 'store');
+//         Route::post('/amer-alkhatib/award-update', 'update');
+//         Route::post('/amer-alkhatib/award-destroy', 'destroy');
+//     });
+// });
 
-/// Contacts
+// /// Contacts
 
-Route::controller(ContactsController::class)->group(function() {
-    Route::get('/amer-alkhatib/contacts', 'index');
-    Route::middleware('auth:sanctum')->group(function(){
-        Route::post('/amer-alkhatib/contact-update', 'update');
-        Route::post('/amer-alkhatib/contact-store', 'store');
-    });
-});
+// Route::controller(ContactsController::class)->group(function() {
+//     Route::get('/amer-alkhatib/contacts', 'index');
+//     Route::middleware('auth:sanctum')->group(function(){
+//         Route::post('/amer-alkhatib/contact-update', 'update');
+//         Route::post('/amer-alkhatib/contact-store', 'store');
+//     });
+// });
 
-/// CV
+// /// CV
 
-Route::controller(CVController::class)->group(function() {
-    Route::get('/amer-alkhatib/cv', 'index');
-    Route::middleware('auth:sanctum')->group(function(){
-        Route::post('/amer-alkhatib/cv-store', 'store');
-        Route::post('/amer-alkhatib/cv-update', 'update');
-    });
-});
+// Route::controller(CVController::class)->group(function() {
+//     Route::get('/amer-alkhatib/cv', 'index');
+//     Route::middleware('auth:sanctum')->group(function(){
+//         Route::post('/amer-alkhatib/cv-store', 'store');
+//         Route::post('/amer-alkhatib/cv-update', 'update');
+//     });
+// });
 
-/// Pictures
+// /// Pictures
 
-Route::controller(PicturesController::class)->group(function() {
-    Route::get('/amer-alkhatib/picures', 'index');
-    Route::post('/amer-alkhatib/picture-show', 'show');
-    Route::post('/amer-alkhatib/picture-search', 'search');
-    Route::middleware('auth:sanctum')->group(function(){
-        Route::post('/amer-alkhatib/picture-store','store');
-        Route::post('/amer-alkhatib/picture-update','update');
-        Route::post('/amer-alkhatib/picture-destroy','destroy');
-    });
-});
+// Route::controller(PicturesController::class)->group(function() {
+//     Route::get('/amer-alkhatib/picures', 'index');
+//     Route::post('/amer-alkhatib/picture-show', 'show');
+//     Route::post('/amer-alkhatib/picture-search', 'search');
+//     Route::middleware('auth:sanctum')->group(function(){
+//         Route::post('/amer-alkhatib/picture-store','store');
+//         Route::post('/amer-alkhatib/picture-update','update');
+//         Route::post('/amer-alkhatib/picture-destroy','destroy');
+//     });
+// });
 
-/// Auth
+// /// Auth
 
-Route::controller(AuthController::class)->group(function() {
-    Route::post('/amer-alkhatib/login', 'login');
-    Route::post('/amer-alkhatib/logout', 'logout');
-});
+// Route::controller(AuthController::class)->group(function() {
+//     Route::post('/amer-alkhatib/login', 'login');
+//     Route::post('/amer-alkhatib/logout', 'logout');
+// });
