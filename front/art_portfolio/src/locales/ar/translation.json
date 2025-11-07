@@ -17,7 +17,8 @@
   "content": {
     "download_cv": "تحميل السيرة الذاتية",
     "contact_info": "معلومات التواصل",
-    "profile_id": "رقم الملف الشخصي"
+    "profile_id": "رقم الملف الشخصي",
+    "search_award": "Search Award..."
   },
   "footer": {
     "copyright": "حقوق الطبع والنشر © 2024 - محفوظة لأمر الخاطب"

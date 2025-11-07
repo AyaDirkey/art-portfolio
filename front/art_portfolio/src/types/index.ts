@@ -24,8 +24,11 @@ export interface Picture {
 
 // CV
 export interface CV {
-  id: number;
-  file_url: string;
+  photo: string;
+  ar_headline: string;
+  en_headline: string;
+  ar_body: string;
+  en_body: string;
 }
 
 // Contact
