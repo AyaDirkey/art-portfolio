@@ -1,0 +1,25 @@
+{
+  "header": {
+    "brand": "Amer Alkhatib",
+    "nav": {
+      "pictures": "Pictures",
+      "cv": "CV",
+      "awards": "Awards",
+      "contact": "Contact"
+    }
+  },
+  "sections": {
+    "pictures": "My Gallery",
+    "cv": "My Curriculum Vitae",
+    "awards": "Awards & Recognition",
+    "contact": "Get In Touch"
+  },
+  "content": {
+    "download_cv": "Download CV",
+    "contact_info": "Contact Information",
+    "profile_id": "Profile ID"
+  },
+  "footer": {
+    "copyright": "Copyright © 2024 - All rights reserved by Amer Alkhatib"
+  }
+}
