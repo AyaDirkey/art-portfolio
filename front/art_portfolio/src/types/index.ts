@@ -17,9 +17,16 @@ export interface Award {
 // Pictures
 export interface Picture {
   id: number;
-  title: string;
-  description: string;
-  image_url: string;
+  picture: string;
+  ar_name: string;
+  en_name: string;
+  height: number;
+  width: number;
+  ar_paint: string;
+  en_paint: string;
+  ar_material: string;
+  en_material: string;
+  date: string;
 }
 
 // CV

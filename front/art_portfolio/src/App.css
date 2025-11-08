@@ -8,3 +8,34 @@
     --color-base-300: #F5F5F5;
 } */
 
+.custom-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, etc. */
+}
+
+.custom-scrollbar:hover {
+  scrollbar-width: thin; /* Firefox */
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar {
+  display: block; /* Chrome, Safari, etc. */
+  height: 8px;
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.custom-scrollbar:hover::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

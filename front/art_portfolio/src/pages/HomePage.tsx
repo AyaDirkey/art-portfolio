@@ -3,6 +3,7 @@ import Header from '../components/common/Header';
 import Footer from '../components/common/Footer';
 import Awards from '../components/Awards';
 import CVComponent from '../components/CV';
+import Pictures from '../components/Pictures';
 
 const HomePage: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const HomePage: React.FC = () => {
       <main>
         <CVComponent />
         <Awards />
+        <Pictures />
       </main>
       <Footer />
     </div>

@@ -6,7 +6,7 @@ interface SectionTitleProps {
 }
 
 const SectionTitle: React.FC<SectionTitleProps> = ({ titleKey }) => {
-  return <h2 className="text-3xl font-bold">{t(titleKey)}</h2>;
+  return <h2 className="text-xl font-bold ">{t(titleKey)}</h2>;
 };
 
 export default SectionTitle;

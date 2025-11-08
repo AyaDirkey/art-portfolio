@@ -4,6 +4,7 @@ import type { ContactInfo } from "../types";
 import { getContactInfo } from "../api/contactsApi";
 import { getFacebookProfileName, getFacebookUrl } from "../utility/helpers";
 import { t } from "i18next";
+import Loading from "./common/Loading";
 
 const Contact: React.FC = () => {
   const [contact, setContact] = useState<ContactInfo | null>(null);
@@ -22,12 +23,9 @@ const Contact: React.FC = () => {
   }, []);
 
   if (loading) {
-    return (
-      <div className="flex justify-center items-center h-64">
-        <span className="loading loading-spinner loading-lg"></span>
-      </div>
-    );
+    return <Loading />;
   }
+
   return (
     <nav>
       <h3 className="footer-title">{t("sections.contact")}</h3>
